@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>HTML5 Canvas In One Page</title>
+<head>
+    
+    </head>
+    <body>
+        <h1>HTML5 Canvas</h1>
+        <H4>It Is Used To Pixel Graphics and When we will zoom in the canvas this pixel come blur</H4>
+        <canvas id="mycanvas" height="200" width="578"></canvas>
+        <script>
+        var canvas=document.getElementById('mycanvas');
+            var context=canvas.getContext('2d');
+            context.beginPath();
+            context.rect(0,0,300,200)
+            context.fillStyle('red');
+            context.fill();
+            context.lineWidth=2;
+            context.strokeStyle='black';
+            context.stroke();
+        </script>
+         </body>
+</html>
